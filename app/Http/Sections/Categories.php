@@ -62,7 +62,8 @@ class Categories extends Section
             ->setColumns(
                 AdminColumn::text('id', '#')->setWidth('30px'),
                 AdminColumn::text('title', 'Title'),
-                AdminColumn::link('slug', 'Slug')
+                AdminColumn::link('slug', 'Slug'),
+                AdminColumn::text('description', 'Описание')
     )->paginate(10);
     }
 
